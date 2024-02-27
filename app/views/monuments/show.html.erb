@@ -1,0 +1,7 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @monument %>
+
+<div class="m-5" style="display: flex;">
+  <%= link_to "Edit", edit_monument_path(@monument), class: "btn" %> <%= link_to "Back", monuments_path, class: "btn" %> <%= button_to "Destroy", @monument, method: :delete, class: "btn" %>
+</div>
